@@ -1,0 +1,200 @@
+body {
+    background-color: #def598;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-size: contain;
+    /* Escalar la imagen para cubrir el fondo */
+    padding: 10px;
+    /* Añade un espacio entre los elementos */
+    border-radius: 1rem;
+    
+    background-color: #eefab1;
+    
+}
+.navbar-nav .nav-item {
+    margin-left: 11rem;
+    
+  }
+  .navbar-nav .nav-item:hover {
+    background-color:  #98df87;
+    border-radius: 2rem; 
+  }
+
+#navegacion {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#navegacion a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 130px;
+    /* Espacio entre elementos del menú */
+    text-decoration: none;
+    /* Quitar subrayado de los enlaces */
+    background-color: #eefab1;
+}
+
+#navegacion a:hover {
+    background-color: #cdf07f;
+    border-color: #333;
+    transform: scale(1.1);
+}
+
+#logoempresa {
+    width: 190px;
+    /* Ancho de la imagen */
+    border-radius: 4rem;
+    margin-left: 2rem;
+}
+
+.rectangulo {
+    border-radius: 25%;
+    /* Crear una forma ovalada */
+    background-color: #cdf07f;
+    /* Fondo verde*/
+    padding: 10px 55px;
+    /* Espaciado dentro del óvalo */
+    margin-right: 20px;
+    /* Espacio entre elementos del menú */
+
+}
+/* Estilos para el menú en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #navegacion {
+        flex-direction: column; /* Cambia a diseño de columna en pantallas pequeñas */
+    }
+  
+    .rectangulo {
+        margin: 5px 0; /* Ajusta el espaciado entre elementos del menú en pantallas pequeñas */
+    }
+  
+    
+  }
+   /* Estilos para el menú en pantallas grandes */
+   @media screen and (min-width: 769px) {
+   #navegacion-desplegable {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+  }
+
+/* Reglas para hacer la página responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navegacion {
+        margin-top: 20px;
+    }
+
+    #navegacion a {
+        margin-right: 0;
+    }
+}
+
+.imgatencionalcliente {
+    position: relative;
+    overflow: hidden;
+}
+
+#atencionalcliente {
+    position: relative;
+    max-height: 450px;
+}
+
+#atencionalcliente img {
+    width: 100%;
+    height: auto;
+    filter: blur(1px);
+    /*valor según el nivel de difuminado que desees */
+    -webkit-mask-image: linear-gradient(to right, transparent, black);
+    /* Máscara que oculta la mitad derecha */
+    mask-image: linear-gradient(to right, transparent, black);
+}
+
+#atencionalcliente div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-82%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #87e918;
+
+}
+
+h2 {
+    font-family: Fira Sans;
+    font-weight: bold;
+}
+
+form {
+    background-color: #96e370;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #8ccb46;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px; /* Ajusta el margen derecho según tus necesidades */
+    vertical-align: middle; /* Alinea verticalmente el checkbox con el texto del label */
+   
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4cc72a;
+    color: white;
+}

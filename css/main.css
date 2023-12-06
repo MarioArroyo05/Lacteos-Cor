@@ -1,0 +1,298 @@
+body {
+  background-color: #def598;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-size: contain;
+  /* Escalar la imagen para cubrir el fondo */
+  padding: 10px;
+  /* Añade un espacio entre los elementos */
+  border-radius: 20px;
+ background-color: #eefab1;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 7rem;
+  
+}
+
+
+
+.navbar-nav .nav-item:hover {
+  background-color:  #98df87;
+  border-radius: 2rem; 
+}
+
+#navegacion {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  /* Centra los elementos en el eje transversal (vertical) */
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#navegacion a {
+  font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+  margin-right: 130px;
+  /* Espacio entre elementos del menú */
+  text-decoration: none;
+  /* Quitar subrayado de los enlaces */
+  background-color: #eefab1;
+}
+
+#navegacion a:hover {
+  background-color: #cdf07f;
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+#logoempresa {
+  width: 190px;
+  /* Ancho de la imagen */
+  border-radius: 4rem;
+  margin-left: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+}
+
+.slider-frame {
+  width: 85%;
+  height: 80vh;
+  margin: 50px auto 0;
+  overflow: hidden;
+  border: 4px solid #98df87;
+}
+
+.slider-frame ul {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  margin-bottom: 0;
+  width: 300%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+
+}
+
+.slider-frame img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#titulopromocion {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 2rem;
+}
+
+
+#TextoBienvenida {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 80px;
+  margin-right: 80px;
+
+}
+
+
+/* Reglas para hacer la página responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navegacion {
+    margin-top: 20px;
+  }
+
+  #navegacion a {
+    margin-right: 0;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #bceb66;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #bceb66;
+}
+
+.carousel-inner img {
+  height: 300px;
+  /* Cambia el valor de altura según tus preferencias */
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.title-cards {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido-card {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido-card h3 {
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+
+.card .contenido-card p {
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #66cf5b;
+  border: 1px solid #98df87;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+  background: #66cf5b;
+  color: #fff;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 15px;
+  }
+}
+
+#map {
+  border: 2px solid #bceb66;
+  width: 100%;
+  /* ancho */
+  border-radius: 8px;
+  overflow: hidden;
+
+}
+
+/* estillos para el propio mapa */
+#map .leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+#btncontacto:hover {
+  transform: scale(1.2);
+}
+
+#whatsaap {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 888;
+  margin-bottom: 6%;
+  transition: opacity 0.3s ease;
+}
+
+#whatsaap:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+#imagen-regreso {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  margin-bottom: 0%;
+  transition: opacity 0.3s ease;
+}
