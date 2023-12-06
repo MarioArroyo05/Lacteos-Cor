@@ -24,67 +24,12 @@ header {
     background-color:  #98df87;
     border-radius: 2rem; 
   }
-
-#navegacion {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-#navegacion a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-right: 130px;
-    /* Espacio entre elementos del menú */
-    text-decoration: none;
-    /* Quitar subrayado de los enlaces */
-    background-color: #eefab1;
-}
-
-#navegacion a:hover {
-    background-color: #cdf07f;
-    border-color: #333;
-    transform: scale(1.1);
-}
-
 #logoempresa {
     width: 190px;
     /* Ancho de la imagen */
     border-radius: 4rem;
     margin-left: 2rem;
 }
-
-.rectangulo {
-    border-radius: 25%;
-    /* Crear una forma ovalada */
-    background-color: #cdf07f;
-    /* Fondo verde*/
-    padding: 10px 55px;
-    /* Espaciado dentro del óvalo */
-    margin-right: 20px;
-    /* Espacio entre elementos del menú */
-
-}
-/* Estilos para el menú en pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    #navegacion {
-        flex-direction: column; /* Cambia a diseño de columna en pantallas pequeñas */
-    }
-  
-    .rectangulo {
-        margin: 5px 0; /* Ajusta el espaciado entre elementos del menú en pantallas pequeñas */
-    }
-  
-    
-  }
-   /* Estilos para el menú en pantallas grandes */
-   @media screen and (min-width: 769px) {
-   #navegacion-desplegable {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-    }
-  }
 
 /* Reglas para hacer la página responsive */
 @media (max-width: 768px) {
@@ -93,13 +38,6 @@ header {
         align-items: center;
     }
 
-    #navegacion {
-        margin-top: 20px;
-    }
-
-    #navegacion a {
-        margin-right: 0;
-    }
 }
 
 .imgatencionalcliente {
@@ -131,7 +69,19 @@ header {
     width: 100%;
     color: #87e918;
 
+    
 }
+@media (max-width: 768px) {
+    #imgatencionalcliente img {
+        max-height: 300px; /* O el valor que prefieras para dispositivos más pequeños */
+    }
+    #lineaatencion{
+        margin-left: 4rem;
+        text-align: end;
+    
+    }
+}
+
 
 h2 {
     font-family: Fira Sans;
